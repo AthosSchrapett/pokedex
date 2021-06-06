@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Type } from './../../_model/Type';
+import { Component, Input, OnInit } from '@angular/core';
+import { Pokemon, getPokemonNumber, getPokemonImage } from 'src/_model/Pokemon';
 
 @Component({
   selector: 'app-pokemon-card',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PokemonCardComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    this.pokemon = {
+      image: '',
+      number: 0,
+      name: '',
+      types: [],
+    }
+  }
 
   ngOnInit(): void {
   }
 
+  @Input()
+  public pokemon: Pokemon;
+
+  public getPokemonNumber = getPokemonNumber;
+  public getPokemonImage = getPokemonImage;
 }
