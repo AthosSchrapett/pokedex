@@ -1,5 +1,6 @@
 <div class="pokemon-card" *ngIf="pokemon">
-  <div class="pokemon-card__image">
+  <!-- <div class="pokemon-card__image"> -->
+  <div class="pokemon-card__image" [class]="'pokemon-card__type--' + pokemon.types[0].toLowerCase()">
     <img
     [src]="getPokemonImage(pokemon)"
     alt="''"

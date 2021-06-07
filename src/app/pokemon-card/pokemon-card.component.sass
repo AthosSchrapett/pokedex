@@ -6,7 +6,13 @@
   width: 215px
 
   &__image
-    background: #f2f2f2
+    /** background: #f2f2f2 **/
+    border-radius: 10px
+    transition: transform 100ms ease-in-out
+
+  &__image:hover
+    transform: scale(1.05)
+    background: #4b57c55b
 
   &__name
     padding: 0 10px

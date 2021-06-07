@@ -1,3 +1,4 @@
+import { map } from 'rxjs/operators';
 import { Type } from './../../_model/Type';
 import { Component, Input, OnInit } from '@angular/core';
 import { Pokemon, getPokemonNumber, getPokemonImage } from 'src/_model/Pokemon';
@@ -26,4 +27,5 @@ export class PokemonCardComponent implements OnInit {
 
   public getPokemonNumber = getPokemonNumber;
   public getPokemonImage = getPokemonImage;
+
 }
