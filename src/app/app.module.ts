@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 import { PokemonService } from 'src/_services/pokemon.service';
+import { BuscaPokemonComponent } from './busca-pokemon/busca-pokemon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PokemonListComponent,
     PokemonCardComponent,
+    BuscaPokemonComponent,
   ],
   imports: [
     BrowserModule,
